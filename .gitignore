@@ -1,0 +1,17 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/cubed_editor
+cubed_editor.so
+cubed_editor.dylib
+cubed_editor.dll
+libcubed_editor.a
+cubed_editor.a
+cubed_editor.lib
+cubed_editor-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

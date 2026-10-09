@@ -1,0 +1,15 @@
+{	
+	"name": "cubed_editor",
+	"targetName": CubeD Editor,
+	"targetPath": "bin",
+	"dependencies": {
+		
+	},
+	"description": "simple project creation window",
+	"license": "proprietary",
+	"authors": [
+		"mifzozo"
+	],
+	"copyright": "No copyright (yet...)",
+
+}
