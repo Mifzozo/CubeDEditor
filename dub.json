@@ -3,8 +3,14 @@
 	"targetName": CubeD Editor,
 	"targetPath": "bin",
 	"dependencies": {
-		
+		"webview": {
+            		"path": "source/webview"
+        	}
 	},
+	"sourceFiles": [
+        	"source/webview/precompiled/windows-x64/webview.lib", 
+		
+    	],
 	"description": "simple project creation window",
 	"license": "proprietary",
 	"authors": [
