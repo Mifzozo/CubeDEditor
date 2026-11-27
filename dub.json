@@ -1,21 +1,31 @@
 {	
 	"name": "cubed_editor",
-	"targetName": CubeD Editor,
+	"targetName": "CubeD Editor",
 	"targetPath": "bin",
 	"dependencies": {
 		"webview": {
-            		"path": "source/webview"
+            		"path": "webview"
         	}
 	},
-	"sourceFiles": [
-        	"source/webview/precompiled/windows-x64/webview.lib", 
-		
-    	],
+      "lflags-linux-x86_64": [
+        "-L$PACKAGE_DIR/webview/precompiled/linux-x86_64"
+	],
+    "sourceFiles-windows-x64": [
+        "webview/precompiled/windows-x64/webview.lib"
+    ],
+        "libs-linux": [
+        "webview",
+        "gtk-3", 
+        "webkit2gtk-4.1", 
+        "stdc++", 
+        "dl",
+        "glib-2.0",
+        "gobject-2.0"
+    ],
 	"description": "simple project creation window",
 	"license": "proprietary",
 	"authors": [
 		"mifzozo"
 	],
 	"copyright": "No copyright (yet...)",
-
 }

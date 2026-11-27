@@ -1,0 +1,15 @@
+name "webview"
+description "Binding for a tiny cross-platform webview library to build modern cross-platform GUIs"
+authors "XXIV"
+copyright "Copyright © 2023, XXIV"
+license "MIT"
+
+targetType "library"
+
+sourceFiles-windows-x86_64 "$PACKAGE_DIR/precompiled/windows-x64/webview.lib"
+sourceFiles-linux-x86_64 "$PACKAGE_DIR/precompiled/linux-x86_64/libwebview.a"
+
+
+libs-windows "advapi32" "ole32" "shell32" "shlwapi" "user32" "version"
+libs-linux "dl" "gtk-3" "webkit2gtk-4.1" "glib-2.0" "gobject-2.0" "stdc++"
+
